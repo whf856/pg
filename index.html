@@ -1,0 +1,269 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>关于本机</title> 
+    <style> 
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; 
+            background-color: #F5F5F5; /* 背景色改为浅色 */ 
+            color: #000000; /* 文字颜色改为黑色 */ 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.4; 
+        } 
+       .container { 
+            max-width: 100%; 
+            margin: 0 auto; 
+            padding-bottom: 20px; 
+        } 
+       .header { 
+            padding: 12px 16px; 
+            font-size: 17px; 
+            font-weight: 600; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            background-color: #FFFFFF; /* 头部背景色改为白色 */ 
+            z-index: 1; 
+            border-bottom: 0.5px solid #D1D1D6; /* 头部边框颜色改为浅灰色 */ 
+        } 
+       .back-button { 
+            position: absolute; 
+            left: 16px; 
+            display: flex; 
+            align-items: center; 
+            color: #0A84FF; 
+            font-size: 17px; 
+        } 
+       .back-arrow { 
+            width: 24px; 
+            height: 24px; 
+            margin-right: 4px; 
+            /* 这里替换为您的箭头图片 */ 
+            background-color: #0A84FF; 
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%230A84FF"><path d="M14.51 6.51l-1.06-1.06L7.05 12l6.4 6.45 1.06-1.06-5.34-5.39z"/></svg>'); 
+            -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%230A84FF"><path d="M14.51 6.51l-1.06-1.06L7.05 12l6.4 6.45 1.06-1.06-5.34-5.39z"/></svg>'); 
+        } 
+       .card { 
+            background-color: #FFFFFF; /* 卡片背景色改为白色 */ 
+            border-radius: 10px; 
+            margin: 10px 16px; 
+            overflow: hidden; 
+        } 
+       .section { 
+            padding: 0 16px; 
+        } 
+       .section-title { 
+            font-size: 13px; 
+            color: #8E8E93; 
+            padding: 8px 0 6px; 
+        } 
+       .row { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 10px 0; 
+            border-bottom: 0.5px solid #D1D1D6; /* 行边框颜色改为浅灰色 */ 
+        } 
+       .row:last-child { 
+            border-bottom: none; 
+        } 
+       .row-title { 
+            font-size: 16px; 
+            color: #000000; /* 行标题文字颜色改为黑色 */ 
+        } 
+       .row-value { 
+            font-size: 16px; 
+            text-align: right; 
+            max-width: 60%; 
+            color: #8E8E93; /* 右侧字体改为浅灰色 */ 
+        } 
+       .editable-value { 
+            cursor: pointer; 
+            padding: 2px 4px; 
+            border-radius: 4px; 
+        } 
+       .editable-value:focus { 
+            background-color: #E5E5EA; /* 聚焦时背景色改为浅灰色 */ 
+            outline: none; 
+        } 
+       .footer-text { 
+            padding: 12px 16px; 
+            font-size: 13px; 
+            color: #8E8E93; 
+            text-align: center; 
+            margin: 0 16px; 
+        } 
+       .learn-more { 
+            color: #0A84FF; 
+        } 
+       .chevron { 
+            color: #8E8E93; 
+            margin-left: 5px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="header"> 
+        <div class="back-button"> 
+            <div class="back-arrow"></div> 
+            <span>返回</span> 
+        </div> 
+        <div>关于本机</div> 
+    </div> 
+ 
+    <div class="container"> 
+        <div class="card"> 
+            <div class="section"> 
+                <div class="row"> 
+                    <div class="row-title">名称</div> 
+                    <div class="row-value editable-value" contenteditable="true">iPhone</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">iOS版本</div> 
+                    <div class="row-value editable-value" contenteditable="true">17.1.2</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">型号名称</div> 
+                    <div class="row-value editable-value" contenteditable="true">iPhone 16 Pro Max</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">型号</div> 
+                    <div class="row-value editable-value" contenteditable="true">MQ6A2CH/A</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">序列号</div> 
+                    <div class="row-value editable-value" contenteditable="true">APJ82R4G5MN</div> 
+                </div> 
+            </div> 
+        </div> 
+ 
+        <div class="card"> 
+            <div class="section"> 
+                <div class="row"> 
+                    <div class="row-title">有限保修</div> 
+                    <div class="row-value editable-value" contenteditable="true">到期：2026/10/15</div>    
+            </div> 
+    </div> 
+        </div> 
+            </div> 
+        </div> 
+      </div> 
+ 
+        <div class="card"> 
+            <div class="section"> 
+                <div class="row"> 
+                    <div class="row-title">歌曲</div> 
+                    <div class="row-value editable-value" contenteditable="true">0</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">视频</div> 
+                    <div class="row-value editable-value" contenteditable="true">2,353</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">照片</div> 
+                    <div class="row-value editable-value" contenteditable="true">9,908</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">应用程序</div> 
+                    <div class="row-value editable-value" contenteditable="true">78</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">总容量</div> 
+                    <div class="row-value editable-value" contenteditable="true">1.02TB</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">可用容量</div> 
+                    <div class="row-value editable-value" contenteditable="true">683 GB</div> 
+                </div> 
+            </div> 
+        </div> 
+ 
+        <div class="card"> 
+            <div class="section"> 
+                <div class="row"> 
+                    <div class="row-title">无线局域网地址</div> 
+                    <div class="row-value editable-value" contenteditable="true">A6:8C:75:2D:80:39</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">蓝牙</div> 
+                    <div class="row-value editable-value" contenteditable="true">B0:8C:75:3E:CF:20</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">调制解调器固件</div> 
+                    <div class="row-value editable-value" contenteditable="true">4.06.02</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">SEID</div> 
+                    <div class="row-value editable-value" contenteditable="true">不可用</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">运营商锁</div> 
+                    <div class="row-value editable-value" contenteditable="true">无SIM卡限制</div> 
+                </div> 
+            </div> 
+        </div> 
+ 
+        <div class="card"> 
+            <div class="section"> 
+                <div class="section-title">正面SIM卡</div> 
+                <div class="row"> 
+                    <div class="row-title">网络</div> 
+                    <div class="row-value editable-value" contenteditable="true">中国移动</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">运营商</div> 
+                    <div class="row-value editable-value" contenteditable="true">中国移动 56.0</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">IMEI</div> 
+                    <div class="row-value editable-value" contenteditable="true">35 673588 54:8758 9</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">ICCID</div> 
+                    <div class="row-value editable-value" contenteditable="true">886550821922c518041</div> 
+                </div> 
+                <div class="row"> 
+                    <div class="row-title">MEID</div> 
+                    <div class="row-value editable-value" contenteditable="true">4678951134:3898</div> 
+                </div> 
+            </div> 
+        </div> 
+ 
+        <div class="card"> 
+            <div class="section"> 
+                <div class="section-title">背面SIM卡</div> 
+                <div class="row"> 
+                    <div class="row-title">IMEI2</div> 
+                    <div class="row-value editable-value" contenteditable="true">35 62939 54:7987 2</div> 
+                </div> 
+            </div> 
+        </div> 
+ 
+        <div class="card"> 
+            <div class="section"> 
+                <div class="section-title"> zwe网络科技</div> 
+            </div> 
+        </div> 
+    </div> 
+ 
+    <script> 
+        // 使所有可编辑字段工作 
+        document.querySelectorAll('.row-value').forEach(element => { 
+            element.setAttribute('contenteditable', 'true'); 
+            element.classList.add('editable-value'); 
+             
+            element.addEventListener('click', function() { 
+                this.focus(); 
+            }); 
+             
+            element.addEventListener('blur', function() { 
+                // 可以在这里添加验证或格式化逻辑 
+            }); 
+        }); 
+    </script> 
+</body> 
+</html>
